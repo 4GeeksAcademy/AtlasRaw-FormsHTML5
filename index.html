@@ -21,17 +21,17 @@
                         <div class="row mt-3" style="display: flex; justify-content: space-between;">
                           <div class="col-5">
                             <label for="">Card#</label><br>
-                            <input type="text" class="form-control" style="width: 100%;" placeholder="XXXXXXXXXXXXXXXX">
+                            <input type="number" min="16" max="16" class="form-control" style="width: 100%;" placeholder="XXXXXXXXXXXXXXXX">
                           </div>
                           <div class="col-3">
                             <label for="">CVC#</label><br>
-                            <input type="text" class="form-control" style="width: 100%;" placeholder="0000">
+                            <input type="number" min="3" max="3" class="form-control" style="width: 100%;" placeholder="0000">
                           </div>
                           <div class="col-3">
                             <label for="">Amount</label><br>
                             <div class="input-group">
                               <span class="input-group-text">$</span>
-                              <input type="text" class="form-control" placeholder="Amount">
+                              <input type="number" min="0.5" max="2000" class="form-control" placeholder="Amount">
                             </div>
                           </div>
                         </div>
@@ -54,7 +54,7 @@
                               <label for="">State</label><br>
                               <div class="input-group">
                                 <select class="form-select">
-                                  <option value="0" selected><p style="color: grey;">Pick a state</p></option>
+                                  <option value="0" selected>Pick a state</option>
                                   <option value="1">One</option>
                                   <option value="2">Two</option>
                                   <option value="3">Three</option>
@@ -63,38 +63,45 @@
                             </div>
                             <div class="col-3" style="height: 100%;">
                               <label for="">Postal Code</label><br>
-                              <input type="text" class="form-control" style="width: 90%;">
+                              <input type="number" class="form-control" style="width: 90%;">
                             </div>
                         </div>
                         <div class="row mt-3" style="display: flex; justify-content: space-between;">
                           <div class="col-6">
                             <label for="">We accept</label><br>
                             <div style="width: 50%; padding: 5px; display: flex; justify-content: space-around; align-items: center; background-color: grey; border-radius: 5px;">
-                              <div class=" form-check">
-                                <input class="form-check-input" type="radio" name="mastercard" id="mastercard" checked>
-                                <label class="form-check-label" for="mastercard">
+
+
+                              
+                              <!--CHECKBOX-->
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
                                   <i class="fa-brands fa-cc-mastercard fa-xl" style="color: white;"></i>
                                 </label>
                               </div>
-                              <div class=" form-check">
-                                <input class="form-check-input" type="radio" name="visa" id="visa">
-                                <label class="form-check-label" for="visa">
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
                                   <i class="fa-brands fa-cc-visa fa-xl" style="color: white;"></i>
                                 </label>
                               </div>
-                              <div class=" form-check">
-                                <input class="form-check-input" type="radio" name="dinersClub" id="dinersClub">
-                                <label class="form-check-label" for="dinersClub">
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                                <label class="form-check-label" for="flexRadioDefault3">
                                   <i class="fa-brands fa-cc-diners-club fa-xl" style="color: white;"></i>
-                                </label>                                
+                                </label>
                               </div>
-                              <div class=" form-check">
-                                <input class="form-check-input" type="radio" name="discover" id="discover">
-                                <label class="form-check-label" for="discover">
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                                <label class="form-check-label" for="flexRadioDefault4">
                                   <i class="fa-brands fa-cc-discover fa-xl" style="color: white;"></i>
-                                </label>                               
+                                </label>
                               </div>
-                              
+                      
+
+
+
                             </div>
                           </div>
                           <div class="col-6">
@@ -113,7 +120,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!--Scripts-->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
